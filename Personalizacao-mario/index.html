@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--CONEXÃO COM O ARQUIVO CSS (LINK:CSS -> CÓDIGO)-->
+    <link rel="stylesheet" href="coffeeShop.css">
+
+    <!-- TÍTULO DA ABA DO SITE -->
+    <title>Café Angelita - Bistrô</title>
+
+</head>
+
+<body>
+    <div class="cabecalho">
+        <img src="./img/traced-side-cafe.png " alt="logo-cabecalho-cafe" />
+
+        <!--TAG PARA INSERIR UM LINK NOS BOTOES DA PAGINA-->
+        <a>Home</a>
+        <a>Nossos Cafés</a>
+        <a>Quem nós somos</a>
+    </div>
+
+
+    <div class="html-principal">
+
+        <div class="logo-sinopse">
+            <img class="logo-cafe" src="./img/traced-logo-cafe.png" alt="logo-cafe-apresentacao" />
+
+            <p class="titulo-sinopse">
+                🍵O seu ponto de encontro para um bom café!🍵 </p>
+
+            <p class="sinopse"> Preparamos cafés especiais com grãos selecionados e comidinhas feitas no dia.
+                Seja para começar a manhã com energia, fazer uma pausa no trabalho ou encontrar os amigos, nossa casa
+                está sempre aberta com café fresco e ambiente acolhedor.
+            </p>
+
+            <button onclick="mostrarForm()">Entre em contato</button>
+
+        </div>
+
+        <div class="foto-central-cafe">
+            <img class="side-image-cafe" src="./img/traced-side-cafe.png" alt="side-image-cafe" />
+
+        </div>
+
+        <div class="video-cafe">
+            <video src="./img/video-cafe.mp4" autoplay loop muted></video>
+
+            <div class="mascara-video"></div>
+        </div>
+
+        <div class="caixa-link-whatsapp">
+            <a class="botao-whatsapp" href="https://wa.me/5561981543611?text=Quero%20um%20Servi%C3%A7o%20!">
+                <img src="./img/logo-whatsapp.png" alt="link-whatsapp">
+            </a>
+        </div>
+
+        <form class="formulario" action="https://formcarry.com/s/9yxO6CWRMTL" method="POST"
+            enctype="multipart/form-data">
+
+            <input placeholder="Seu Nome" type="text" name="nome" />
+            <input placeholder="Seu Email" type="email" name="email" />
+            <textarea placeholder="Digite seu problema aqui..." name="problema"></textarea>
+
+            <button type="submit">Pedir Meu Café</button>
+        </form>
+
+        <div class="mascara-formulario" onclick="esconderForm()"></div>
+
+    </div>
+
+</body>
+
+<script src="mario.js"></script>
+
+</html>
